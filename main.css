@@ -7,7 +7,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: 25vh;
-    background: rgb(65,105,225);   
+    background-color: rgb(68, 82, 124);   
 }
 
 .numerical_display{
@@ -84,10 +84,6 @@ nav button:focus{
     padding-top: 15px;
 }
 
-.square_grp button:focus{
-    outline:0;
-}
-
 .square1,
 .square2,
 .square3,
@@ -98,6 +94,9 @@ nav button:focus{
     height: 126.39px;
     margin: 7px;
     border-radius: 20px;
+    transition: all 0.5s;
 }
+
+
 
 

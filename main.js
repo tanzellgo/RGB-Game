@@ -1,3 +1,5 @@
+var head = document.querySelector(".head");
+
 var num1 = document.querySelector("#num1");
 var num2 = document.querySelector("#num2");
 var num3 = document.querySelector("#num3");
@@ -29,7 +31,7 @@ for(var i = 0; i <= 5; i++){
     var green = Math.floor(Math.random() * 256);
     var blue = Math.floor(Math.random() * 256);
 
-    list_square_2[i].style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+    list_square_2[i].style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
 
     if(list_square_2[i] === rgb_question){
         num1.textContent = red;
@@ -77,6 +79,8 @@ newbtn.addEventListener("click", function(){
     
     msg.textContent = "";
     rem_square = [];
+    head.style.backgroundColor = "rgb(68, 82, 124)";
+    newbtn.textContent = "NEW COLORS";
 });
 
 easybtn.addEventListener("click", function(){
@@ -104,48 +108,96 @@ hardbtn.addEventListener("click", function(){
 square1.addEventListener("click", function(){
     if(this === rgb_question){
         msg.textContent = "CORRECT!";
+        head.style.backgroundColor = this.style.backgroundColor;
+        square2.style.backgroundColor = this.style.backgroundColor;
+        square3.style.backgroundColor = this.style.backgroundColor;
+        square4.style.backgroundColor = this.style.backgroundColor;
+        square5.style.backgroundColor = this.style.backgroundColor;
+        square6.style.backgroundColor = this.style.backgroundColor;
+        newbtn.textContent = "PLAY AGAIN?";
     } else {
         msg.textContent = "Nice Try";
+        this.style.backgroundColor = "black";
     }
 })
 
 square2.addEventListener("click", function(){
     if(this === rgb_question){
         msg.textContent = "CORRECT!";
+        head.style.backgroundColor = this.style.backgroundColor;
+        square1.style.backgroundColor = this.style.backgroundColor;
+        square3.style.backgroundColor = this.style.backgroundColor;
+        square4.style.backgroundColor = this.style.backgroundColor;
+        square5.style.backgroundColor = this.style.backgroundColor;
+        square6.style.backgroundColor = this.style.backgroundColor;
+        newbtn.textContent = "PLAY AGAIN?";
     } else {
         msg.textContent = "Nice Try";
+        this.style.backgroundColor = "black";
     }
 })
 
 square3.addEventListener("click", function(){
     if(this === rgb_question){
         msg.textContent = "CORRECT!";
+        head.style.backgroundColor = this.style.backgroundColor;
+        square2.style.backgroundColor = this.style.backgroundColor;
+        square1.style.backgroundColor = this.style.backgroundColor;
+        square4.style.backgroundColor = this.style.backgroundColor;
+        square5.style.backgroundColor = this.style.backgroundColor;
+        square6.style.backgroundColor = this.style.backgroundColor;
+        newbtn.textContent = "PLAY AGAIN?";
     } else {
         msg.textContent = "Nice Try";
+        this.style.backgroundColor = "black";
     }
 })
 
 square4.addEventListener("click", function(){
     if(this === rgb_question){
         msg.textContent = "CORRECT!";
+        head.style.backgroundColor = this.style.backgroundColor;
+        square2.style.backgroundColor = this.style.backgroundColor;
+        square3.style.backgroundColor = this.style.backgroundColor;
+        square1.style.backgroundColor = this.style.backgroundColor;
+        square5.style.backgroundColor = this.style.backgroundColor;
+        square6.style.backgroundColor = this.style.backgroundColor;
+        newbtn.textContent = "PLAY AGAIN?";
     } else {
         msg.textContent = "Nice Try";
+        this.style.backgroundColor = "black";
     }
 })
 
 square5.addEventListener("click", function(){
     if(this === rgb_question){
         msg.textContent = "CORRECT!";
+        head.style.backgroundColor = this.style.backgroundColor;
+        square2.style.backgroundColor = this.style.backgroundColor;
+        square3.style.backgroundColor = this.style.backgroundColor;
+        square4.style.backgroundColor = this.style.backgroundColor;
+        square1.style.backgroundColor = this.style.backgroundColor;
+        square6.style.backgroundColor = this.style.backgroundColor;
+        newbtn.textContent = "PLAY AGAIN?";
     } else {
         msg.textContent = "Nice Try";
+        this.style.backgroundColor = "black";
     }
 })
 
 square6.addEventListener("click", function(){
     if(this === rgb_question){
         msg.textContent = "CORRECT!";
+        head.style.backgroundColor = this.style.backgroundColor;
+        square2.style.backgroundColor = this.style.backgroundColor;
+        square3.style.backgroundColor = this.style.backgroundColor;
+        square4.style.backgroundColor = this.style.backgroundColor;
+        square5.style.backgroundColor = this.style.backgroundColor;
+        square1.style.backgroundColor = this.style.backgroundColor;
+        newbtn.textContent = "PLAY AGAIN?";
     } else {
         msg.textContent = "Nice Try";
+        this.style.backgroundColor = "black";
     }
 })
 
