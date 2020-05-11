@@ -44,11 +44,16 @@ nav button{
     background-color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    color: rgb(65,105,225);
+    color: rgb(68, 82, 124);
 }
 
-nav button:active{
-    background: rgb(65,105,225);
+nav button:hover{
+    background: rgb(68, 82, 124);
+    color: white;
+}
+
+.select{
+    background: rgb(68, 82, 124);
     color: white;
 }
 
@@ -95,6 +100,8 @@ nav button:focus{
     margin: 7px;
     border-radius: 20px;
     transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
 }
 
 

@@ -92,6 +92,8 @@ easybtn.addEventListener("click", function(){
             removed++;
         }
     }
+    this.classList.add("select");
+    hardbtn.classList.remove("select");
 });
 
 hardbtn.addEventListener("click", function(){
@@ -103,6 +105,8 @@ hardbtn.addEventListener("click", function(){
     square6.style.display = "block";
     rem_square = [];
     list_square_2 = list_square.slice();
+    this.classList.add("select");
+    easybtn.classList.remove("select");
 });
 
 square1.addEventListener("click", function(){
